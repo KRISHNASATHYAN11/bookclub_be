@@ -123,9 +123,11 @@ exports.updateProfile = async (req, res) => {
 
     res.status(200).json({ message: "Successfully updated", updatedUser });
 
-    // new;true is used to return the updated data (updated data frnt endilott pass cheyan)
+    // new;true is used to return the updated data (updated data frntendilott pass cheyan)
   } catch (error) {
     console.log(error);
     res.status(500).json({ message: "something went wrong in server" });
   }
 };
+
+

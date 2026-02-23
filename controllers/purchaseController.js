@@ -46,8 +46,8 @@ exports.buyBook = async (req, res) => {
       payment_method_types: ["card"],
       line_items,
       mode: "payment",
-      success_url: "http://localhost:5173/payment-success",
-      cancel_url: "http://localhost:5173/payment-failure",
+      success_url: "https://bookclub-fe-91js.vercel.app/payment-success",
+      cancel_url: "https://bookclub-fe-91js.vercel.app//payment-failure",
     });
 
     // mongodbupdate
